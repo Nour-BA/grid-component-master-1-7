@@ -1,0 +1,97 @@
+body {
+  background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+  margin: auto;
+  background-color: rgb(187, 236, 220);
+  width: 60%;
+  margin-top: 50px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.container .text {
+  background-color: white;
+  padding: 10px 25px;
+}
+.container .text > h1 {
+  color: hsl(179, 62%, 43%);
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+}
+.container .text > h3 {
+  color: hsl(71, 73%, 54%);
+  font-family: "Karla", sans-serif;
+  font-weight: 500;
+}
+.container .text > p {
+  color: hsl(218, 22%, 67%);
+  font-family: "Karla", sans-serif;
+  font-weight: 500;
+}
+
+.box {
+  display: flex;
+  font-family: "Karla", sans-serif;
+  color: white;
+}
+
+.box .box-1 {
+  background-color: hsl(179, 62%, 43%);
+  padding: 25px;
+}
+.box .box-2 {
+  background-color: hsla(179, 62%, 43%, 0.589);
+  padding: 25px;
+}
+
+.box .box-1 span:nth-of-type(1) {
+  font-weight: bold;
+  font-size: 30px;
+  margin-right: 10px;
+}
+.box .box-1 span:nth-of-type(2) {
+  color: rgba(255, 255, 255, 0.514);
+  transform: translateY(-5px);
+  display: inline-block;
+}
+.box .box-1 > p {
+  color: rgba(255, 255, 255, 0.856);
+}
+.box .box-1 input {
+  color: white;
+  font-size: 17px;
+  width: 100%;
+  margin: auto;
+  background-color: hsl(71, 73%, 54%);
+  border-style: none;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 2px 2px 4px rgba(54, 78, 129, 0.541);
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+}
+.box .box-1 input:hover {
+  background-color: hsla(71, 100%, 55%, 0.856);
+}
+
+@media (max-width: 650px) {
+  .box {
+    flex-direction: column;
+    width: 100%;
+  }
+  .box .box-1 input {
+    width: 50%;
+  }
+  .container {
+    text-align: center;
+  }
+}
+
+@media (min-width: 650px) {
+  .container .box > div {
+    width: 50%;
+  }
+}
